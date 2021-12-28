@@ -3,6 +3,7 @@
 <head>
   <title>몽쵸 - 둘의 MBTI</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS53PER7CV"></script>
 <script>
@@ -12,40 +13,31 @@
 
   gtag('config', 'G-XS53PER7CV');
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="colors.js"></script>
 </head>
-<body bgcolor="#000000" text="#FFFFFF" link="00BFFF" alink="696969" vlink="#ADD8E6">
-  <h1><a href="index.html" style="text-decoration:none">몽쵸</a></h1>
-  <ol>
-    <li><a href="1.html" style="text-decoration:none">만남의 시작</a></li>
-    <li><a href="2.html" style="text-decoration:none">둘의 MBTI</a></li>
-    <li><a href="3.html" style="text-decoration:none">금빛 미래</a></li>
-  </ol>
-  <h2>둘의 MBTI</h2>
-  <p style="margin-top:30px;"><a href="https://loawa.com/char/%EC%9E%87%EC%B5%B8" target="_blank" title="로아와 캐릭터 정보 - 잇쵸" style="text-decoration:none">잇쵸</a>는 <strong>INFP</strong>이고 <a href="https://loawa.com/char/%ED%95%98%EB%AA%BD%EB%A7%9B" target="blank" title="로아와 캐릭터 정보 - 하몽맛" style="text-decoration:none">하몽</a>은 <strong>ENFJ</strong>인데, 두 MBTI 유형의 궁합은 상당히 좋다고 알려져 있으므로, <strong>두 사람의 <u>관계 시너지는 긍정적</u>으로 전망</strong>된다.
-  </p><p style="margin-top:45px;"><img src="ENFJ INFP.jpg" width="75%">
-  </p><p style="margin-top:30px;">그러나 P와 J로 나뉘는 네 번째 성향의 차이가 극단적이다. 완전하지 않더라도 모든 일에 계획을 가지고 행동하는 J의 일정을 유념하지 않는 P의 행위는 J에게 과도한 스트레스를 줄 수 있기 때문이다. 마찬가지로 현재에 충실하고 최선을 다하는 P에게 정해지지 않은 미래를 강요하는 것도 심적으로 부담만 주는 행위이다.
-  </p><p style="margin-top:30px;">이 부분만 잘 조율한다면 두 사람은 앞으로도 문제없는 연애를 이어갈 수 있을 것이다.
-  </p>
-  <p>
-    <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://lee-lee.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </p>
+<body>
+  <h1><a href="index.html" class="title">하몽과 잇쵸</a></h1>
+  <input type="button" class="button" value="밤이" onclick="
+    nightDayHandler(this);
+  ">
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">만남의 시작</a></li>
+      <li><a href="2.html">둘의 MBTI</a></li>
+      <li><a href="3.html">금빛 미래</a></li>
+    </ol>
+    <div id="article">
+      <h2>둘의 MBTI</h2>
+      <p style="margin-top:25px;"><strong><a href="https://loawa.com/char/%EC%9E%87%EC%B5%B8" target="_blank" title="로아와 캐릭터 정보 - 잇쵸" style="color:#b34d03">잇쵸</a></strong>는 <strong>INFP</strong>이고 <strong><a href="https://loawa.com/char/%ED%95%98%EB%AA%BD%EB%A7%9B" target="blank" title="로아와 캐릭터 정보 - 하몽맛" style="color:#b34d03">하몽</a></strong>은 <strong>ENFJ</strong>인데, 두 MBTI 유형의 궁합은 상당히 좋다고 알려져 있으므로, <strong>두 사람의 관계 시너지는 긍정적으로 전망</strong>된다.
+      </p><p style="margin-top:25px;"><img src="ENFJ INFP.jpg" width="75%">
+      </p><p style="margin-top:25px;">그러나 P와 J로 나뉘는 네 번째 성향의 차이가 극단적이다. 완전하지 않더라도 모든 일에 계획을 가지고 행동하는 J의 일정을 유념하지 않는 P의 행위는 J에게 과도한 스트레스를 줄 수 있기 때문이다. 마찬가지로 현재에 충실하고 최선을 다하는 P에게 정해지지 않은 미래를 강요하는 것도 심적으로 부담만 주는 행위이다.
+      </p><p style="margin-top:25px;">이 부분만 잘 조율한다면 두 사람은 앞으로도 문제없는 연애를 이어갈 수 있을 것이다.
+      </p>
+    </div>
+  </div>
+  <input type="button" class="button" value="밤이" onclick="
+    nightDayHandler(this);
+  ">
 </body>
 </html>

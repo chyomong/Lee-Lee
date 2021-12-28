@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      var chyomong = {
+        "summoner":"잇쵸",
+        "infighter":"하몽"
+      };
+      document.write("infighter : "+chyomong.infighter+"<br>");
+      document.write("summoner : "+chyomong.summoner+"<br>");
+      chyomong.bard = "링가";
+      document.write("bard : "+chyomong.bard+"<br>");
+      chyomong["war lord"] = "메탱";
+      document.write("war lord : "+chyomong["war lord"]+"<br>");
+    </script>
+  <h2>Iterate</h2>
+  <script>
+    for(var key in chyomong) {
+      document.write(key+' : '+chyomong[key]+'<br>');
+    }
+  </script>
+  <h2>Property & Method</h2>
+  <script>
+    chyomong.showAll = function () {
+      for(var key in this) {
+        document.write(key+' : '+this[key]+'<br>');
+      }
+    }
+    chyomong.showAll();
+  </script>
+  </body>
+</html>

@@ -3,6 +3,7 @@
 <head>
   <title>몽쵸 - 만남의 시작</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XS53PER7CV"></script>
 <script>
@@ -12,39 +13,30 @@
 
   gtag('config', 'G-XS53PER7CV');
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="colors.js"></script>
 </head>
-<body bgcolor="#000000" text="#FFFFFF" link="00BFFF" alink="696969" vlink="#ADD8E6">
-  <h1><a href="index.html" style="text-decoration:none">몽쵸</a></h1>
-  <ol>
-    <li><a href="1.html" style="text-decoration:none">만남의 시작</a></li>
-    <li><a href="2.html" style="text-decoration:none">둘의 MBTI</a></li>
-    <li><a href="3.html" style="text-decoration:none">금빛 미래</a></li>
-  </ol>
-  <h2>만남의 시작</h2>
-  <p style="margin-top:30px;">처음부터 서로에게 설렘을 느꼈던 것은 아니다.<br>계기는 하몽의 당돌한 채팅이었다
-  </p><p style="margin-top:45px;">"쵸님 저랑 몽환의 궁전 데이트 할래요?"
-  </p><p style="margin-top:45px;">마침 둠강선의 시기에 접어들면서 기존 길드원들은 접속이 뜸했고, 하몽과 잇쵸는 단 둘이 디스코드에 남아 같이 숙제를 하는 날이 많았다. "몽환의 궁전 데이트"도 자연스럽게 디스코드 상의 꽁냥거림과 함께 이루어졌다. 그날 이후 두 사람은 썸을 타기 시작했으며, 하몽이 학교 일로 서울에 올라온 때 기다리던 첫만남이 성사되었다.
-  </p>
-  <p>
-    <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://lee-lee.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </p>
+<body>
+  <h1><a href="index.html" class="title">하몽과 잇쵸</a></h1>
+  <input type="button" class="button" value="밤이" onclick="
+    nightDayHandler(this);
+  ">
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">만남의 시작</a></li>
+      <li><a href="2.html">둘의 MBTI</a></li>
+      <li><a href="3.html">금빛 미래</a></li>
+    </ol>
+    <div id="article">
+      <h2>만남의 시작</h2>
+      <p style="margin-top:25px;">처음부터 서로에게 설렘을 느꼈던 것은 아니다.<br>계기는 하몽의 당돌한 채팅이었다
+      </p><p style="margin-top:25px;">"쵸님 저랑 몽환의 궁전 데이트 할래요?"
+      </p><p style="margin-top:25px;">마침 둠강선의 시기에 접어들면서 기존 길드원들은 접속이 뜸했고, 하몽과 잇쵸는 단 둘이 디스코드에 남아 같이 숙제를 하는 날이 많았다. "몽환의 궁전 데이트"도 자연스럽게 디스코드 상의 꽁냥거림과 함께 이루어졌다. 그날 이후 두 사람은 썸을 타기 시작했으며, 하몽이 학교 일로 서울에 올라온 때 기다리던 첫만남이 성사되었다.
+      </p>
+    </div>
+  </div>
+  <input type="button" class="button" value="밤이" onclick="
+    nightDayHandler(this);
+  ">
 </body>
 </html>

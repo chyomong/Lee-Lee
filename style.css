@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@import url(http://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap);
+body {
+  margin:0;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+h1 {
+  font-family: 'Nanum Brush Script', cursive;
+  font-size:60px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:30px;
+}
+#grid ol {
+  border-right:1px solid gray;
+  width:100px;
+  margin:0;
+  padding:20px;
+  padding-left: 35px;
+}
+#grid {
+  font-family: 'Noto Serif KR', serif;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid #article{
+  padding-left: 25px;
+  padding-right: 20px;
+}
+#grid #article p{
+  color: #515151;
+}
+@media(max-width:750px) {
+  #grid{
+    display: block;
+  }
+  #grid ol {
+    border-right: none;
+  }
+  h1 {
+    font-size: 50px;
+    border-bottom:none;
+  }
+  #grid #article{
+    padding-left: 15px;
+  }
+}
+input[value="밤이"].button {
+  width: 100px;
+  border: none;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 5px;
+  padding-right: 1px;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: .3em;
+  overflow: auto;
+  border-radius: .3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+input[value="낮져"].button {
+  width: 100px;
+  border: none;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 5px;
+  padding-right: 1px;
+  background-color: white;
+  color: #0099CC;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: .3em;
+  overflow: auto;
+  border-radius: .3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
