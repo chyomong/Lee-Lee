@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
-@import url(http://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Noto+Serif+KR&display=swap');
 body {
   margin:0;
 }
